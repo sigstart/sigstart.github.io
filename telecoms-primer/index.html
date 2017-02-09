@@ -1,0 +1,533 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Telecommunications in South Africa - A Primer</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Telecoms in South&nbsp;Africa</h1>
+					<p>A Primer</p>
+					<p><small>(Or: some of the stuff you need to know to work at MyBroadband (and BusinessTech).)</small></p>
+				</section>
+				<section>
+					<h2>Types of connections</h2>
+					<p>(last-mile)</p>
+					<ul>
+						<li>Fixed line / wireline</li>
+						<li>Mobile</li>
+						<li>Fixed wireless</li>
+					</ul>
+					<aside class="notes">
+						<p>Basically 2 ways: wired and wireless.</p>
+						<p>These can be further subdivided.</p>
+						<p>Last mile: how the Internet actually arrives at your house.</p>
+					</aside>
+				</section>
+				<section>
+					<section>
+						<h2>How your Internet connection works</h2>
+						<p>(broadly)</p>
+					</section>
+					<section data-background-image="img/Internet-diagram.jpg">
+						<aside class="notes">
+							<ul>
+								<li>Access (line / spectrum)</li>
+								<li>Backhaul</li>
+								<li>Internet exchange</li>
+								<li>Peering and transit</li>
+								<li>ISP / VMNO</li>
+								<li>Wholesalers (IPC, Internet Solutions, Echo)</li>
+						</aside>
+					</section>
+					<section>
+						<a href="https://mybroadband.co.za/news/broadband/129196-how-you-connect-to-the-internet-in-south-africa.html">
+							<img src="img/How-you-connect-to-the-Internet.jpg" />
+						</a>
+					</section>
+				</section>
+				<section>
+					<h2>Fixed-line</h2>
+					<img src="img/Internet-AP.jpg" />
+				</section>
+				<section>
+					<section>
+						<h2>Copper</h2>
+						<img src="img/telephone-cable.jpg" />
+					</section>
+					<section>
+						<img src="img/RJ11.jpg" />
+					</section>
+					<section>
+						<img src="img/600-socket.jpg" />
+					</section>
+					<section>
+						<img src="img/phone-connections.jpg" />
+					</section>
+					<section>
+						<img src="img/POTS-filter.jpg" />
+					</section>
+					<section>
+						<img src="img/POTS-filter-plugged-in.jpg" />
+					</section>
+					<section data-background-image="img/telkom-logo.jpg">
+						<aside class="notes">
+							Or, to be more accurate, which is what this session is all about...
+						</aside>
+					</section>
+					<section data-background-image="img/openserve.png">
+						<aside class="notes">
+							Openserve is Telkom's wholesale and networks division.
+							Telkom, they'll have us believe, is now just another service provider
+							that makes use of Openserve services.
+						</aside>
+					</section>
+					<section>
+						<h3>Price of a copper line</h3>
+						<p>Analogue line rental (phone line): R189 p/m</th>
+						<table>
+							<thead>
+								<th>ADSL access type</th>
+								<th>Speed</th>
+								<th>Monthly price</th>
+							</thead>
+							<tr>
+								<td>Telkom Fast ADSL</td>
+								<td>2Mbps</td>
+								<td>R165 p/m</td>
+							</tr>
+							<tr>
+								<td>Telkom Faster ADSL</td>
+								<td>4Mbps</td>
+								<td>R299 p/m</td>
+							</tr>
+							<tr>
+								<td>Telkom Faster+ ADSL</td>
+								<td>8Mbps</td>
+								<td>R399 p/m</td>
+							</tr>
+							<tr>
+								<td>Telkom Fastest ADSL</td>
+								<td>10Mbps</td>
+								<td>R425 p/m</td>
+							</tr>
+							<tr>
+								<td>Telkom Elite xDSL</td>
+								<td>20Mbps</td>
+								<td>R499 p/m</td>
+							</tr>
+							<tr>
+								<td>Telkom Elite+ xDSL</td>
+								<td>40Mbps</td>
+								<td>R599 p/m</td>
+							</tr>
+						</table>
+						<aside class="notes">
+							But these are not the only things you have to pay for...
+						</aside>
+					</section>
+					<section>
+						<h3>Internet Service Providers</h3>
+						<p>(Specifically: ADSL ISPs)</p>
+						<img src="img/ISPs.jpg"/>
+					</section>
+					<section>
+						<h2>Bandwidth!</h2>
+						<strong><p>Or what an ADSL ISP needs to offer services</p></strong>
+						<p><small>(capacity, measured in Mbps or Gbps)</small></p>
+						<ol>
+							<li>International</li>
+							<li>Local (peering and transit)</li>
+							<li>Wholesale ADSL capacity: IP Connect</li>
+						</ol>
+					</section>
+					<section>
+						<h3>ADSL <span style="text-transform: none;">ISPs</span> have 2 choices:</h3>
+						<ol>
+							<li>Buy IP Connect from Openserve/Telkom</li>
+							<li>Buy capacity from a wholesaler, or upstream provider,
+								that buys IPC from Openserve/Telkom</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Upstream provider examples</h3>
+						<ul>
+							<li><strong>Internet Solutions:</strong> WebAfrica, Crystal Web</li>
+							<li><strong>Echo Service Provider:</strong> Afrihost</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Everything you need for home ADSL</h3>
+						<ol>
+							<li>Analogue line rental — R189</li>
+							<li>ADSL access fee — R59 to R600</li>
+							<li>ISP account — R0 to R&infin;</li>
+						</ol>
+						<p>... or you could buy a bundle</p>
+						<aside class="notes">
+							To recap!
+						</aside>
+					</section>
+					<section>
+						<h2>Naked ADSL</h2>
+						<p><small>(imagine your favourite kind of nudity here)</small></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Fibre</h2>
+						<img src="img/Fibre-cables.jpg" />
+					</section>
+					<section>
+						<h3>FTTH - in the house</h3>
+						<img src="img/FTTH-CPE.jpg" />
+					</section>
+					<section>
+						<h3>Same basic principle as ADSL, except:</h3>
+						<ul>
+							<li><strong>Much</strong> higher maximum speeds (1Gbps!).</li>
+							<li>No Telkom infrastructure monopoly.</li>
+							<li>No mandatory phone line rental.</li>
+						</ul>
+						<p>Naked ADSL is here and it is called FTTH!</p>
+					</section>
+					<section>
+						<h3>FTTH access network providers</h3>
+						<ul style="column-count: 2;">
+							<li>Openserve</li>
+							<span class="fragment fade-up">
+							<li>Vodacom</li>
+							<li>MTN + Smart Village</li>
+							<li>SEACOM</li>
+							<li>Neotel</li>
+							<li>Dark Fibre Africa <br/>(SA Digital Villages)</li>
+							<li>Link Africa</li>
+							<li>Vumatel + Fibrehoods</li>
+							<li>Frogfoot (Vox)</li>
+							<li>Cybersmart</li>
+							<li style="margin-left: 1rem;">Metrofibre Networx</li>
+							<li style="margin-left: 1rem;">Octotel</li>
+							<li style="margin-left: 1rem;">TT Connect</li>
+							<li style="margin-left: 1rem;">Mitsol</li>
+							<li style="margin-left: 1rem;">Teralink</li>
+							<li style="margin-left: 1rem;">Maboneng</li>
+							<li style="margin-left: 1rem;">Century City Connect</li>
+							<li style="margin-left: 1rem;">Waterfall Access Networks</li>
+							<li style="margin-left: 1rem;">Estate Connexions</li>
+							</span>
+						</ul>
+					</section>
+					<section>
+						<h3>Internet service providers</h3>
+						<ul>
+							<li>Many ADSL ISPs also offer FTTH accounts.</li>
+							<li>Some fibre-only ISPs, e.g.:
+								<ul>
+									<li>Cool Ideas</li>
+									<li>RocketNet</li>
+									<li>Greencom</li>
+									<li>Cipherwave HomeConnect</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Mobile wireless</h2>
+						<img src="img/tower-tree.jpg" />
+					</section>
+					<section>
+						<h2>How mobile connections work</h2>
+						<img style="height: 300px;" src="img/iphone-6.jpg" />
+						<p>See "<a href="https://mybroadband.co.za/news/cellular/105767-what-south-africas-mobile-internet-actually-looks-like.html">What South Africa’s mobile Internet actually looks like</a>"</p>
+					</section>
+					<section data-background-image="img/Internet-diagram.jpg">
+					</section>
+					<section>
+						<h3>Spectrum</h3>
+						<img src="img/Spectrum.jpg" />
+					</section>
+					<section>
+						<h3>What is spectrum?</h3>
+						<ul>
+							<li>Think of it as capacity</li>
+							<li>It is literally measured in bandwidth, just in different units (Hertz - usually kHz, MHz, or GHz)</li>
+							<li>Frequency is also in Hz, and the two are related</li>
+						</ul>
+						<img src="img/car-radio.jpg" />
+					</section>
+					<section data-background-image="img/water-pipe.jpg">
+					</section>
+					<section>
+						<h3>IMT spectrum</h3>
+						<p><small>(that stands for International Mobile Telecommunications)</small>
+						<ul>
+							<li>Standards and recommendations determined by members of the International Telecommunication Union.</li>
+							<li style="margin-top: 2rem;">At meetings like World Radiocommunication Conference, in Geneva.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>900MHz band</h3>
+						<img src="img/900MHz-band-ZA.jpg" />
+						<aside class="notes">
+							FDD - gap is called duplex spacing.
+						</aside>
+					</section>
+					<section>
+						<h3>1800MHz (1.8GHz) band</h3>
+						<img src="img/1800MHz-band-ZA.jpg" />
+					</section>
+					<section>
+						<h3>1900/2100 (1.9/2.1GHz) band</h3>
+						<img src="img/2100MHz-band-ZA.jpg" />
+					</section>
+					<section>
+						<h3>2600 (2.6GHz) band</h3>
+						<img src="img/2600MHz-band-ZA.jpg" />
+					</section>
+					<section>
+						<h3>Why is spectrum important?</h3>
+						<table>
+							<thead>
+								<tr>
+									<th>Network</th>
+									<th>Total IMT spectrum (MHz)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Vodacom</td>
+									<td style="text-align: right;">81 MHz</td>
+								</tr>
+								<tr>
+									<td>MTN</td>
+									<td style="text-align: right;">86 MHz</td>
+								</tr>
+								<tr>
+									<td>Cell C</td>
+									<td style="text-align: right;">76 MHz</td>
+								</tr>
+								<tr>
+									<td>Telkom</td>
+									<td style="text-align: right;">162 MHz</td>
+								</tr>
+								<tr>
+									<td>Neotel</td>
+									<td style="text-align: right;">90 MHz</td>
+								</tr>
+								<tr>
+									<td>iBurst</td>
+									<td style="text-align: right;">54 MHz</td>
+								</tr>
+								<tr class="fragment fade-up">
+									<td>Fibre (single strand)</td>
+									<td style="text-align: right;">4,390,000 MHz</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>Digital Dividend</h3>
+						<img src="img/Old-TV-showing-static.jpg" />
+					</section>
+					<section>
+						<h2>What's in a G?</h2>
+						<p>When people speak in Gs, they usually mean:
+						<table>
+							<thead>
+								<tr>
+									<th>Generation</th>
+									<th>Technology</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2G</td>
+									<td>GPRS, EDGE</td>
+								</tr>
+								<tr>
+									<td>3G</td>
+									<td>HSPA, HSPA+</td>
+								</tr>
+								<tr>
+									<td>4G</td>
+									<td>LTE, LTE-Advanced</td>
+								</tr>
+							</tbody>
+						</table>
+						<p><small>Technologies we don't hear about much in South Africa like
+							CDMA2000 and Mobile WiMAX are also considered 3G (and 4G candidates),
+							but not usually marketed that way.</small></p>
+					</section>
+					<section>
+						<h2>It's all wrong</h2>
+					</section>
+					<section>
+						<h3>OK maybe not <em>all</em>, but a lot.</h3>
+						<p>If everyone cared about being technically accurate
+							(according to ITU definitions):</p>
+						<ul>
+							<li>EDGE would be referred to as a 3G standard.</li>
+							<li>LTE would be referred to as a 3G standard.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Real and virtual network operators</h2>
+						<p>Vodacom, MTN, Cell C, Telkom, Neotel, and iBurst own and operate
+							wireless infrastructure.</p>
+						<p>Mobile virtual network operators (MVNOs), do not.</p>
+					</section>
+					<section>
+						<h3>Examples of <span style="text-transform: none;">MVNOs</span></h3>
+						<!--ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul-->
+					</section>
+					<section data-background-image="img/Virgin-Mobile-Gradient.jpg">
+					</section>
+					<section data-background-image="img/Afrihost-logo-on-background.jpg">
+					</section>
+					<section data-background-image="img/FNB-Mobile.png">
+					</section>
+					<section data-background-image="img/Axxess-logo-on-blue-wave.jpg">
+					</section>
+					<section data-background-image="img/Crystalweb-logo-on-blue.jpg">
+					</section>
+					<section data-background-image="img/BokSel.jpg">
+					</section>
+					<section data-background-image="img/Mweb-logo.jpg">
+					</section>
+					<section data-background-image="img/MRP-mobile.png">
+					</section>
+					<section data-background-image="img/meyou-mobile-sim-card.jpg">
+					</section>
+					<section data-background-image="img/smartmobile.jpg">
+					</section>
+					<section data-background-image="img/mvn-x.png">
+					</section>
+					<section>
+						<h2>Mobile — connecting to the network</h2>
+						<ul>
+							<li>Attaching to the Network</li>
+							<li>Data session initiated</li>
+							<li>Authentication (Part 2)</li>
+							<li>Billing</li>
+							<li>Data delivered</li>
+							<li>Ending a data session</li>
+						</ul>
+						<p style="text-align: left;">
+							Read more on MyBroadband:<br/><a href="https://mybroadband.co.za/news/cellular/105563-hidden-activity-when-you-use-your-smartphone.html">Hidden activity when you use your smartphone</a>
+						</P>
+					</section>
+					<section>
+						<a href="https://mybroadband.co.za/news/cellular/105563-hidden-activity-when-you-use-your-smartphone.html">
+							<img src="img/Mobile-phone-connection.jpg" />
+						</a>
+					</section>
+				</section>
+				<section>
+						<h2>Assignments</h2>
+						<ol>
+							<li>Write a 400 word article on why it is important that the mobile
+								operators get more spectrum.</li>
+							<li>Your clueless friend Jan has just moved and has asked your advice
+								for a home Internet connection. Up to 20Mbps VDSL and LTE coverage
+								from all the mobile operators is available, but not FTTH. He uses
+								roughly 50GB per month. What connection would you recommend and why?</li>
+						</ol>
+						<p>Due date: 23:59 on Saturday, 11 February</p>
+						<aside class="notes">
+							That gives me Sunday, Monday, and Tuesday to go through them all.
+						</aside>
+				</section>
+				<section>
+				<section>
+					<h2>Cloud and hosting</h2>
+				</section>
+					<section data-background-image="img/Vodacom-Park.jpg">
+					</section>
+					<section data-background-image="img/Vodacom-Data-Park-entrance.jpg">
+					</section>
+					<section data-background-image="img/Vodacom-DC-Security-entrance.jpg">
+					</section>
+					<section data-background-image="img/Vodacom-DC-Secure-hosting.jpg">
+					</section>
+					<section data-background-image="img/Vodacom-DC-Racks-ready-for-use.jpg">
+					</section>
+					<section data-background-image="img/Vodacom-DC-New-data-centre-space.jpg">
+					</section>
+					<section data-background-image="img/Vodacom-DC-Under-the-floor.jpg">
+					</section>
+					<section data-background-image="img/DC-cross-connect-Tata-Comms.jpg">
+					</section>
+					<section data-background-image="img/Vodacom-DC-UPSs-and-power-feeds.jpg">
+					</section>
+					<section data-background-image="img/Vodacom-DC-Power-backup-batteries.jpg">
+					</section>
+					<section data-background-image="img/Vodacom-DC-Diesel-generator.jpg">
+					</section>
+					<section data-background-image="img/Vodacom-DC-Fire-protection.jpg">
+						<aside class="notes">
+						</aside>
+					</section>
+				</section>
+				<section>
+					<h2>Open access</h2>
+				</section>
+				<section>
+					<section>
+						<h2>Why cell towers most probably aren't giving you cancer</h2>
+					</section>
+					<section data-background-image="img/emr.jpg">
+					</section>
+				</section>
+				<section>
+					<h2>Fin.</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
