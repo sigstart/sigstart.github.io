@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>TV & broadcasting in South Africa</h1>
+					<p style="text-align: right;">MyBroadband</p>
+				</section>
+				<section>
+					<section>
+						<h1>Types of TVs</h1>
+					</section>
+					<section>
+						<h2>CRT</h2>
+						<img src="img/CRT-old.jpg"/>
+					</section>
+					<section>
+						<img src="img/CRT-new.jpg"/>
+					</section>
+					<section>
+						<h2>Plasma</h2>
+						<img src="img/plasma-tv.jpg"/>
+					</section>
+					<section>
+						<h2>LCD — Liquid Crystal Display</h2>
+						<img src="img/lcd-tv.jpg"/>
+					</section>
+					<section>
+						<img src="img/ccfl.jpg"/>
+					</section>
+					<section>
+						<h2>LED — Light Emitting Diode</h2>
+						<img src="img/led-tv.jpg"/>
+					</section>
+					<section>
+						<img src="img/full-led-backlight.jpg"/>
+					</section>
+					<section>
+						<img src="img/backlights.jpg"/>
+					</section>
+					<section>
+						<h2>Smart, 3D, and curved</h2>
+						<img src="img/curved-tv.jpg"/>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Broadcast services</h2>
+						<p>Similar to broadband in a few ways. In the end, it's just about
+							trying to get data to people.</p>
+						<ul>
+							<li>Wireline — cable, fibre</li>
+							<li>Wireless — terrestrial, satellite</li>
+						</ul>
+						<aside class="notes">
+							Cable not really used in South Africa, while fibre is used infrequently.
+						</aside>
+					</section>
+					<section>
+						<h2>The big difference?</h2>
+						<ul>
+							<li>Broadband: one sender, one receiver (mostly)</li>
+							<li>Broadcast: one sender, many receivers</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Free vs. subscription TV</h2>
+					<ul>
+						<li>Pay TV - monthly subscription</li>
+						<li>Free TV</li>
+						<ul>
+							<li>Free-to-air — anyone can pick up the signal</li>
+							<li>Free-to-view — you need a decoder, but no subscription</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h3>Pay TV</h3>
+						<p>A broadcast TV service with a monthly subscription fee.</p>
+					</section>
+					<section>
+						<img src="img/DStv-logo.jpg" />
+					</section>
+					<section>
+						<img src="img/StarSat.jpg" />
+					</section>
+					<section>
+						<img src="img/GOtv.jpg" />
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Free-to-air</h3>
+						<p>Unencrypted TV and radio services.</p>
+					</section>
+					<section>
+						<img src="img/SABC-logo-building.jpg" />
+					</section>
+					<section data-background-image="img/e-tv.jpg">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Free-to-view</h3>
+						<p>TV services without a subscription, but which are encrypted.</p>
+					</section>
+					<section>
+						<img src="img/OpenView-HD.jpg" />
+					</section>
+					<section>
+						<img src="img/Freevision.jpg" />
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Satellite broadcasting</h2>
+						<ul>
+							<li>Pay TV — DStv, StarSat</li>
+							<li>Free-to-view — OpenView HD</li>
+							<li>What does DStv stand for?</li>
+						</ul>
+						<aside class="notes">
+							Why is “digital” in the name?
+							Analogue satellite is dead, so we’re ignoring it.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>How DStv works</h2>
+						<img src="img/DStv-Xtraview-kit.jpg" />
+					</section>
+					<section data-background-image="img/intelsat-20.jpg">
+					</section>
+					<section data-background-image="img/Testing-Intelsat-36.jpg">
+					</section>
+					<section data-background-image="img/MultiChoice-command-centre.jpg">
+						<h3 style="background-color: rgba(0,0,0,0.3);">How does DStv get all its channels?</h3>
+						<aside class="notes">
+							<p>Everything controlled from Randburg, but <a href="https://mybroadband.co.za/news/broadcasting/118447-how-dstv-channels-get-to-you.html">how does it get there?</a></p>
+							<p>Own channels, beamed up right from Randburg, e.g. M-Net, SuperSport.</p>
+							<p>Discovery, BBC, etc. uplink from wherever they are, either over
+							fibre or satellite.</p>
+						</aside>
+					</section>
+					<section data-background-image="img/MultiChoice-City.jpg">
+						<aside class="notes">
+							<p>MultiChoice brings the third-party channel to a hub (e.g. Randburg),
+								where it fixes audio, inserts ads, does conditional access.</p>
+							<p>The channel is then uplinked to IS-20.</p>
+							<p>When a channel goes dead, it’s not always the pay-TV operator’s
+								fault, but they take ultimate responsibility.</p>
+						</aside>
+					</section>
+					<section>
+						<img style="background-color: #fff;" src="img/Globecast.png"/>
+						<aside class="notes">
+							Oscar Pistorius trial - https://mybroadband.co.za/news/broadcasting/98088-oscar-pistorius-trial-live-streaming-tech.html
+						</aside>
+					</section>
+				</section>
+				<section>
+					<h2>Terrestrial broadcasting</h2>
+					<img src="img/Sentech-tower.jpg" />
+					<aside class="notes">
+						<p>Remember bunny ears, or plugging a roof antenna into your TV? Lots
+						of people actually still use that.</p>
+						<p>Terrestrial = radio and TV over an antenna.</p>
+						<p>SABC, e.tv, radio, GOtv (DTT only), community stations.</p>
+					</aside>
+				</section>
+				<section>
+					<section>
+						<h2>Digital migration</h2>
+						<ul>
+							<li>Terrestrial TV uses old “analogue standard”.</li>
+							<li>Migration: switch to better “digital” standard, and turn analogue off.</li>
+							<li>However, currently TVs in SA can only receive the analogue signal — integrated/embedded tuners. Think of it like a built-in decoder. So now what?</li>
+						</ul>
+						<aside class="notes">
+							Answer to question: external decoders, a.k.a. set-top boxes
+						</aside>
+					</section>
+					<section>
+						<img src="img/DVB-T2-STB.png" />
+					</section>
+					<section>
+						<h3>Fight! Fight! Fight!</h3>
+						<img src="img/digital-tv-logo.jpg" />
+						<aside class="notes">
+							<ul>
+								<li>2010: fight over standards, but sanity prevailed in 2011 under Roy Padayachi who used the opportunity to adopt a newer version of the standard we were going to use anyway.</li>
+								<li>Since then: fight over “encryption” or “conditional access”, depending on who you speak to. Heading to ConCourt.</li>
+								<li>Think of conditional access like DStv being able to switch you off for not paying.</li>
+								<li>Hence dispute over “free-to-view” and “free-to-air”. E.tv want DTT to be free-to-view by default. DStv, SABC, and gov’t want it to be free-to-view by default.</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h2>Digital migration battles</h2>
+						<ul>
+							<li><strong>2010:</strong> Fight over standards.</li>
+							<li><strong>2011:</strong> Sanity prevails under Roy Padayachi. We adopt a newer version of the standard we were going to use anyway.</li>
+							<li><strong>Since then:</strong> fight over “encryption” or “conditional access”, depending on who you speak to. Heading to ConCourt.</li>
+							<li>Conditional access: how DStv can switch you off for not paying.</li>
+							<li>E.tv wants CA - free-to-view.</li>
+							<li>DStv, SABC, and gov’t don't want CA - free-to-air.</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h1>Fin.</h1>
+				</section>
+				<section>
+					<h2>Not in this session</h2>
+					<ul>
+						<li>Resolution: 480i, 576i, 720i/p, 1080i/p, UHD</li>
+						<li>Scan types: i and p</li>
+						<li>TFT Panel types: *VA, PVA, TN, IPS</li>
+						<li>Subpixel arrangements</li>
+						<li><a href="https://mybroadband.co.za/news/broadcasting/101434-five-new-pay-tv-companies-licensed.html">New pay-TV entrants</a>, e.g. Siyaya and Kagiso/Kwese</li>
+						<li>VOD and streaming</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
